@@ -1,0 +1,292 @@
+/* Navbar.scss */
+
+.navbar-container{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+
+
+/* CSS cho dropdown-menu */
+.dropdown-menu {
+  position: relative;
+  display: none;
+  transition: 2s;
+  position: absolute;
+  background-color: white;
+  color: black;
+ 
+  max-height: 1200px;
+ 
+}
+.strain {
+  display: inline-block; /* Để đảm bảo phần tử hiển thị trên cùng một dòng */
+  width: 100%; /* Đặt chiều rộng tối đa cho đường thẳng */
+  border-top: 1px solid #000; /* Đường thẳng 1px màu đen */
+ 
+}
+
+/* Hiển thị dropdown-menu khi hover vào menu-item */
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+.menu-link {
+  
+  color: #000;
+  text-decoration: none;
+  &:hover{
+    color: #f11722;
+    transition: 1s;
+    
+  }
+}
+
+.menu-con {
+  display: none;
+  position: absolute;
+  right: 12rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  right: 0;
+  top: 0;
+  z-index: 1; /* Đảm bảo menu hiển thị phía trên các phần tử khác */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sub-menu-a{
+ 
+  text-decoration: none;
+  color: #000;
+  &:hover{
+    color: #f11722;
+    transition: 1s;
+  }
+}
+.tour-class:hover .menu-con {
+  display: block;
+  opacity: 1; 
+}
+/* Các điều chỉnh khác theo ý muốn */
+
+.video-element {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.navbar-content {
+  position: absolute;
+  top: 0;
+  left: 10rem; /* Khoảng cách từ đường biên lề trái */
+  right: 12rem; /* Khoảng cách từ đường biên lề phải */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Khoảng cách từ trên xuống và từ dưới lên */
+  box-sizing: border-box;
+
+}
+
+.logo {
+  flex: 1; /* Logo nằm bên trái, sử dụng flexbox để định kích thước */
+}
+
+.logo-header {
+  width: 100px;
+}
+
+
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Đưa menu về bên phải */
+  gap: 10px;
+}
+
+.menu ul li {
+  font-size: 14px;
+}
+
+.a-menu {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+
+.a-menu{
+  display: flex;
+}
+.menu-icon{
+  
+  color: #fff;
+  cursor: pointer;
+  width: 1rem;
+  position: absolute;
+  right: 0;
+  top: 1.9rem;
+}
+/* Navbar.scss */
+.menu {
+  /* Các thiết lập menu khi không mở mobile menu */
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-open {
+  transform: translateX(-100%);
+}
+
+
+/* Các thiết lập cho mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+}
+.a-menu-mobile {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 2.5rem 0;
+  line-height: 2.2;
+  &:hover{
+    color: #ff4a52;
+    transition: 0.5s;
+  }
+}
+.close-icon li{
+  list-style: none;
+}
+.mobile-menu.open {
+  width: 20%;
+}
+.hide-logo{
+  opacity: 0;
+}
+.blur-background {
+  filter: blur(8px); /* Adjust the blur intensity as needed */
+}
+/* Add a new class to hide the menu when isMobileMenuOpen is true */
+.mobile-menu.hide-mobile-menu {
+  display: none;
+}
+.close-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 2rem;
+  color: #ff4a52;
+  line-height: 42px;
+  font-size: 45px;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+
+  &:hover {
+    transform: translateY(-5px); /* Adjust the value as needed */
+  }
+}
+.image-menu-mobile{
+  margin : 0 2rem;
+}
+.image-mobile{
+  border-radius:5px;
+  margin: 20px 0 0 0;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: auto; /* Để giữ tỷ lệ hình ảnh */
+  margin-right: 16px;
+}
+.price-container {
+  display: inline-block; /* Đảm bảo phần tử chỉ chiếm chiều rộng cần thiết */
+  background-color: #ff4a52; /* Thay đổi màu nền tùy ý */
+  padding: 4px 8px; /* Tạo khoảng trắng xung quanh giá tiền */
+  border-radius: 4px; /* Để bo tròn góc */
+  color: white; /* Màu chữ trắng trên nền màu */
+  width: auto; /* Thiết lập chiều rộng tự động dựa trên nội dung */
+  height: 5vh;
+}
+.title-name-mobile{
+  position: absolute;
+  margin-top: -7rem;
+}
+.span-name-mobile{
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 1.7rem;
+}
+.icon-star{
+  margin-left: 1.7rem;
+  color: #1EC6B6;
+  font-size: 10px;
+}
+.input-navbar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.add-cart-icon{
+  width: 0.5rem;
+  color: #fff;
+  position: absolute;
+  right: -2rem;
+}
+
+/* Responsive*/
+/* Tablet-Moblie*/
+@media screen and (max-width: 1025px) {
+  .menu{
+    display: none;
+  }
+  .navbar-content{
+    left: 1rem;
+    right: 2rem;
+  }
+  .add-cart-icon{
+    right: 4rem;
+    position: fixed;
+    top: 2rem;
+    display: none;
+    width: 1rem;
+    color: #fff;
+  }
+  .mobile-menu.open{
+    width: 50%;
+    overflow: scroll;
+  }
+  .price-container{
+    padding: 0 8px;
+  }
+ 
+}
+/* Moblie*/
+@media screen and (max-width : 480px) {
+  .menu-icon{
+    margin: -15px 0;
+  }
+  .add-cart-icon{
+    margin: -15px 0;
+    position: static;
+  }
+  .a-menu-mobile{
+    font-size: 12px;
+  }
+  .price-container {
+    height: 3vh;
+  }
+  .title-name-mobile {
+    margin-top: -5rem;
+  }
+}

@@ -1,0 +1,139 @@
+
+.h1-text {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 46.8px;
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Kiểu cho thẻ span */
+  .span-text {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+/* Style cho container chứa 3 input */
+.input-container {
+    margin: 2rem 0;
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các input */
+  }
+  
+  .custom-input.large {
+    border: none;
+    border-radius: 5px;
+    width: 280px; /* Đặt chiều rộng lớn hơn */
+    height: 40px; /* Đặt chiều cao */
+  }
+  .search-icon{
+    position: absolute;
+    left: 26%;
+    margintop: 8px;
+    color: #7f7f7f;
+    margin-top: 7px;
+  }
+  .date-icon{
+    position: absolute;
+    left: 56%;
+    margin: 8px 0;
+    color: #7f7f7f,
+  }
+  .attach-icon{
+    position: absolute;
+    right: 7rem;
+    margintop: 8px;
+    color: #7f7f7f;
+  }
+  .import-icon{
+    position: absolute;
+    right: 7rem;
+    margintop: 8px;
+    color: #7f7f7f;
+  }
+  .month-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .month-list li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .month-list li:hover {
+    color: blue; /* Màu sẽ thay đổi khi hover */
+  }
+ .location-list{
+    cursor: pointer;
+    transition: color 0.3s ease;
+ }
+ .location-list li:hover{
+    color: blue;
+ }
+ .button-more{
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+ }
+ /*responsive input */
+ /*responsive tablet mobile */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .custom-input.large{
+    width: 200px;
+  }
+  .search-icon{
+    left: 24%;
+  }
+  .date-icon{
+    left: 52%;
+  }
+  .import-icon{
+    margin: 8px 0;
+  }
+ }
+/*responsive mobile */
+@media screen and (max-width : 580px) {
+  .input-component{
+    height: 95vh;
+  }
+  .h1-text{
+    margin-top: 4.5rem;
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .span-text{
+    text-align: center;
+    font-size: 9px;
+    flex-direction: column;
+  }
+  .input-container{
+    flex-direction: column;
+    margin: 18px 0;
+  }
+  .custom-button{
+    padding: 10px 100px;
+  }
+  .custom-input.large{
+    width: 246px;
+  }
+  .search-icon{
+   left: 87%;
+  }
+  .date-icon{
+   left: 123%;
+  }
+  .import-icon{
+  left: 123%;
+  }
+  .attach-icon{
+  left: 123%;
+  }
+}

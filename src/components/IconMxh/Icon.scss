@@ -1,0 +1,16 @@
+.icon {
+    display: flex;
+    gap: 10px;
+    margin: 2rem 0;
+    cursor: pointer;
+  }
+  
+  .icon svg {
+    color: #000; /* Màu mặc định của icon */
+    transition: color 0.3s; /* Thời gian chuyển đổi màu */
+  }
+  
+  .icon svg:hover {
+    color: #ff4a52; /* Màu khi hover */
+  }
+  

@@ -1,0 +1,54 @@
+.popular-container{
+    text-align: center;
+}
+.text-h1{
+    font-size: 35px;
+}
+.image-gallery {
+    display: flex;
+    margin-top: 4rem;
+  }
+  .text{
+    font-weight: 600;
+    color: #7f7f7f;
+    justify-content: center;
+  }
+  .image-item {
+    margin: 0 2rem;
+    text-align: center; // Căn giữa nội dung bên trong mỗi ảnh
+    width: calc(25% - 0.5px); // 25% width cho mỗi ảnh, trừ đi 3rem khoảng cách
+    position: relative;
+  width: 70%;
+  }
+  
+ 
+  .p-popular{
+    
+    padding: 0;
+ position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%; 
+  color: white; 
+   
+  }
+  .img-popular:hover {
+    transform: translateY(-3px); /* Đẩy ảnh lên khi hover */
+    filter: brightness(0.9); /* Áp dụng lớp màu đen mờ */
+  }
+  
+  
+  
+  .image-item:hover{
+    opacity: 1; /* Hiển thị văn bản khi hover */
+  }
+  @media screen and (max-width: 830px) {
+    .image-gallery{
+      flex-direction: column;
+    }
+    .image-item{
+      width: 100%;
+      margin: 0;
+    }
+  }

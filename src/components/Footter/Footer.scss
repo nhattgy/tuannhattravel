@@ -1,0 +1,126 @@
+/* Footer.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black;
+   margin-top: 3rem;
+  }
+  /* Thêm CSS để ẩn cuộn trang khi mobile menu mở */
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+  .footer-section {
+    margin-left: 5rem;
+    flex: 1; /* Để các phần bằng chiều rộng bằng nhau */
+    margin-right: 20px;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #1ec6b6;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0ee9d3;
+  }
+  
+  .footer-section h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+.h3-footer{
+    color: #fff;
+}
+.span-footer{
+    color: #fff;
+    display: inline-block;
+    max-width: 300px;
+}
+.logo-footer{
+    margin-top: 2rem;
+}
+.img-footer{
+    width: 40%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Để tạo một cột duy nhất */
+    grid-row-gap: 10px; /* Để tạo khoảng cách giữa các hàng */
+  }
+  
+  .container div {
+    grid-column: 1; /* Để các phần tử con nằm trong cột đầu tiên */
+  }
+
+  .text svg {
+    margin-right: 5px; /* Để tạo khoảng cách giữa icon và văn bản */
+    width: 1rem;
+  }
+.icon-footer{
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+/* Đặt màu cho biểu tượng Facebook */
+.fa-facebook {
+    color: #1877f2; 
+    font-size: 30px;
+  }
+  
+
+  .fa-twitter {
+    color: #1da1f2; font-size: 30px;
+  }
+  
+
+  .fa-youtube {
+    color: #ff0000; font-size: 30px;
+  }
+  
+  
+  .fa-pinterest {
+    color: #bd081c; font-size: 30px;
+  }
+ 
+  .fa-instagram {
+    color: #e4405f; font-size: 30px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột trên một hàng */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+  }
+  
+  .image-grid img {
+    border-radius: 10px;
+    max-width: 100%; /* Đảm bảo ảnh không bị tràn ra ngoài phần tử cha */
+    height: auto;
+  }
+@media screen and (max-width : 830px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer-section{
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,27 @@
+.span-art{
+    font-size: 11px;
+    font-weight: 700;
+}
+.h2-name-trip{
+    font-size: 24px;
+}
+.btn-art{
+    margin-top: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #7f7f7f;
+    &:hover{
+        color: #000;
+    }
+}
+.btn-art {
+    display: flex;
+    align-items: center; /* Căn icon và nút theo chiều dọc */
+  }
+  
+  /* Điều chỉnh khoảng cách giữa "Read More" và icon (tuỳ theo ý muốn) */
+  .icon-arrow {
+    margin-left: 5px; /* Đặt khoảng cách bên trái của icon */
+  }
+  

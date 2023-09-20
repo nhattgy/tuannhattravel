@@ -1,0 +1,85 @@
+.bestvalue-container{
+    text-align: center;
+}
+.text-span{
+    font-weight: 600;
+    color: #7f7f7f;
+}
+.image-value-trip{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    gap:1rem;
+    overflow: hidden;
+}
+.img-value{
+    border-radius: 15px;
+}
+.image-itemm{
+    width: 20%;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+.price-value{
+    position: absolute;
+    display: inline-block;
+    background-color: #ff4a52;
+    padding: 0px 38px;
+    border-radius: 4px;
+    color: white;
+    width: auto;
+    height: 3vh;
+    margin-top: 8rem;
+    overflow: hidden;
+}
+.p-popularr{
+    color: #000;
+    margin-left: 7rem;
+    font-size: 13px;
+    font-weight: 700;
+}
+.info-to-trip{
+    padding: 5px 15px 15px 15px;
+    border: 1px solid #ebebeb;
+}
+.info-to-trip {
+    background-color: rgba(255, 255, 255, 0.7); /* Add a background color for better visibility */
+    padding: 10px;
+    border-radius: 0 0 5px 0; /* Add rounded corners to the top-right */
+  }
+  
+  /* Adjust the text alignment as needed */
+  .info-to-trip{
+    text-align: left; /* Align text to the left */
+  }
+  .icon-starr{
+    overflow: hidden;
+    margin: 35px 0;
+    color: #1EC6B6;
+  }
+.image-itemm:hover{
+    transform: scale(1.02); 
+    background-color: rgba(255, 255, 255, 0.7);
+}
+  .image-itemm:hover .price-value {
+    transform: scale(1.2); 
+    font-size: 18px; /* Increase font size on hover */
+    transition: font-size 0.3s ease; /* Add a smooth transition */
+    
+  }
+  
+@media screen and (max-width: 830px) {
+    .image-itemm {
+        width: 100%;
+    }
+    .image-value-trip{
+        flex-direction: column;
+    }
+    .info-to-trip{
+        border: none;
+        margin-left: 4rem;
+    }
+    .p-popularr{
+        margin-left: 1rem;
+    }
+}

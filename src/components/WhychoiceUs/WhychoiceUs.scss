@@ -1,0 +1,55 @@
+
+.whychoice-container{
+    text-align: center;
+}
+.h1-choice{
+    font-size: 40px;
+}
+.item-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   
+  }
+  
+  .image-container {
+    text-align: center;
+    margin: 20px; /* Điều chỉnh khoảng cách giữa các hình ảnh */
+  }
+  
+  .img-whychoice {
+    max-width: 43%; /* Để hình ảnh không vượt quá kích thước ban đầu */
+  }
+  
+  .h3-whychoice {
+    margin-top: 10px; /* Điều chỉnh khoảng cách giữa hình ảnh và tiêu đề */
+    transform: rotate(0deg); /* Đảm bảo tiêu đề không bị xoay */
+  }
+  .span-choice{
+    font-weight: bold;
+    color: #7f7f7f;
+  }
+  .span-whychoice {
+    display: block;
+    max-width: 350px; /* Đặt chiều rộng tối đa cho <span> */
+    padding: 10px; /* Đặt khoảng trắng xung quanh nội dung */
+    overflow: hidden; /* Ẩn phần dư thừa nếu nội dung vượt quá kích thước */
+    white-space: normal; /* Cho phép văn bản xuống dòng tự động */
+  }
+  
+  .img-banner {
+    margin-top: 2rem;
+    height: 60vh; /* Đặt chiều cao là 60% chiều cao của màn hình */
+    overflow: hidden; /* Ẩn phần dư thừa nếu hình ảnh vượt quá kích thước của <div> */
+  }
+  
+  .img-banner2 {
+    width: 100%; /* Đảm bảo hình ảnh rộng 100% của <div> */
+    height: 100%; /* Đảm bảo hình ảnh cao 100% của <div> */
+    object-fit: cover; /* Hiển thị toàn bộ hình ảnh và cắt bớt phần thừa */
+  }
+  @media screen and (max-width: 600px) {
+    .item-image{
+        flex-direction: column;
+    }
+  }
