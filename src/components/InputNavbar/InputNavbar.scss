@@ -31,10 +31,12 @@
     width: 280px; /* Đặt chiều rộng lớn hơn */
     height: 40px; /* Đặt chiều cao */
   }
+  .container{
+    display: flex;
+  }
   .search-icon{
     position: absolute;
     left: 26%;
-    margintop: 8px;
     color: #7f7f7f;
     margin-top: 7px;
   }
@@ -47,13 +49,13 @@
   .attach-icon{
     position: absolute;
     right: 7rem;
-    margintop: 8px;
+    margin-top: 8px;
     color: #7f7f7f;
   }
   .import-icon{
     position: absolute;
     right: 7rem;
-    margintop: 8px;
+    margin-top: 8px;
     color: #7f7f7f;
   }
   .month-list {
